@@ -50,12 +50,12 @@ WIND_H        10.0                # height of wind speed measurement
 #######################################################################
 # Land Surface Files and Parameters
 #######################################################################
-SOIL            ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20151028.nc
+SOIL            ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20160327.nc
 NODES           3  # number of soil thermal nodes
-VEGPARAM        ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20151028.nc
+VEGPARAM        ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20160327.nc
 ROOT_ZONES      3
-VEGLIB	        ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20151028.nc
-SNOW_BAND	    1 ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20151028.nc
+VEGLIB	        ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20160327.nc
+SNOW_BAND	    1 ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20160327.nc
 
 #######################################################################
 # Output Files and Parameters
