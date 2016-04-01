@@ -43,8 +43,9 @@ FORCE_TYPE    AIR_TEMP 	   tas    # Average air temperature, C
 FORCE_TYPE    PREC 	       prcp   # Total precipitation (rain and snow), mm
 FORCE_TYPE    PRESSURE 	   pres   # Atmospheric pressure, kPa
 FORCE_TYPE    SWDOWN       dswrf  # Incoming shortwave, W/m2
-FORCE_TYPE    LWDOWN 	   dlwrf  # Incoming longwave radiation, W/m2
+FORCE_TYPE    LWDOWN 	     dlwrf  # Incoming longwave radiation, W/m2
 FORCE_TYPE    VP           shum   # Vapor pressure, kPa
+FORCE_TYPE    WIND         wind   # Wind speed, m/s
 WIND_H        10.0                # height of wind speed measurement
 
 #######################################################################
