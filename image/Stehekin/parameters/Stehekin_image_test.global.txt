@@ -25,7 +25,7 @@ AERO_RESIST_CANSNOW AR_406
 #######################################################################
 # DOMAIN INFO
 #######################################################################
-DOMAIN ${VIC_SAMPLE_DATA}/image/Stehekin/domain.stehekin.20151028.nc
+DOMAIN ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/domain.stehekin.20151028.nc
 DOMAIN_TYPE    LAT     lat
 DOMAIN_TYPE    LON     lon
 DOMAIN_TYPE    MASK    mask
@@ -38,24 +38,25 @@ DOMAIN_TYPE    XDIM    lon
 # Forcing Files and Parameters
 # netcdf forcing files will be of the form: FORCING1.YYYY.nc
 #######################################################################
-FORCING1	  ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_image_test.forcings_10days.
+FORCING1	  ${VIC_SAMPLE_DATA}/image/Stehekin/forcings/Stehekin_image_test.forcings_10days.
 FORCE_TYPE    AIR_TEMP 	   tas    # Average air temperature, C
 FORCE_TYPE    PREC 	       prcp   # Total precipitation (rain and snow), mm
 FORCE_TYPE    PRESSURE 	   pres   # Atmospheric pressure, kPa
 FORCE_TYPE    SWDOWN       dswrf  # Incoming shortwave, W/m2
-FORCE_TYPE    LWDOWN 	   dlwrf  # Incoming longwave radiation, W/m2
+FORCE_TYPE    LWDOWN 	     dlwrf  # Incoming longwave radiation, W/m2
 FORCE_TYPE    VP           shum   # Vapor pressure, kPa
+FORCE_TYPE    WIND         wind   # Wind speed, m/s
 WIND_H        10.0                # height of wind speed measurement
 
 #######################################################################
 # Land Surface Files and Parameters
 #######################################################################
-SOIL            ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20160327.nc
+SOIL            ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/Stehekin_test_params_20160327.nc
 NODES           3  # number of soil thermal nodes
-VEGPARAM        ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20160327.nc
+VEGPARAM        ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/Stehekin_test_params_20160327.nc
 ROOT_ZONES      3
-VEGLIB	        ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20160327.nc
-SNOW_BAND	    1 ${VIC_SAMPLE_DATA}/image/Stehekin/Stehekin_test_params_20160327.nc
+VEGLIB	        ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/Stehekin_test_params_20160327.nc
+SNOW_BAND	    1 ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/Stehekin_test_params_20160327.nc
 
 #######################################################################
 # Output Files and Parameters
