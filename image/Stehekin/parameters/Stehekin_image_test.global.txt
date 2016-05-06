@@ -15,6 +15,7 @@ STARTDAY	1 	# day model simulation starts
 ENDYEAR 	1949
 ENDMONTH	1
 ENDDAY		10
+CALENDAR    PROLEPTIC_GREGORIAN
 
 FULL_ENERGY TRUE	# calculate full energy balance
 FROZEN_SOIL	FALSE	# calculate frozen soils
@@ -34,9 +35,21 @@ DOMAIN_TYPE    FRAC    frac
 DOMAIN_TYPE    YDIM    lat
 DOMAIN_TYPE    XDIM    lon
 
+######################################################################
+## State Files and Parameters
+########################################################################
+##INIT_STATE  # Initial state path/file
+#STATENAME ${STATE_DIR}/image/Stehekin/states  # Output state file path/prefix. The time (STATEYEAR,STATEMONTH,STATEDAY,STATESEC) will be appended to the prefix automatically in the format yyyymmdd.
+#STATEYEAR   1949    # year to save model state
+#STATEMONTH  1  # month to save model state
+#STATEDAY    5  # day to save model state
+#STATESEC    82800  # second to save model state
+#STATE_FORMAT           NETCDF4_CLASSIC  # State file format, valid options:
+#NETCDF3_CLASSIC, NETCDF3_64BIT_OFFSET, NETCDF4_CLASSIC, NETCDF4
+
 #######################################################################
 # Forcing Files and Parameters
-# netcdf forcing files will be of the form: FORCING1.YYYY.nc
+# netcdf forcing files will be of the form: <FORCING1>YYYY.nc
 #######################################################################
 FORCING1	  ${VIC_SAMPLE_DATA}/image/Stehekin/forcings/Stehekin_image_test.forcings_10days.
 FORCE_TYPE    AIR_TEMP 	   tas    # Average air temperature, C
