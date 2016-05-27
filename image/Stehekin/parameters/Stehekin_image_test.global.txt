@@ -75,9 +75,11 @@ SNOW_BAND	    1 ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/Stehekin_test_param
 # Output Files and Parameters
 #######################################################################
 RESULT_DIR  ${VIC_SAMPLE_RESULTS}/sample_image/Stehekin.history.nc
-OUTPUT_STEPS_PER_DAY 24  # number of output time steps per 24 hour period
 
 OUTFILE     fluxes
+AGGFREQ     NDAYS   1  # Write output every 1 day
+COMPRESS    5  # Use netCDF gzip compression level 5
+OUT_FORMAT  NETCDF4
 OUTVAR      OUT_PREC
 OUTVAR      OUT_RAINF
 OUTVAR      OUT_SNOWF
