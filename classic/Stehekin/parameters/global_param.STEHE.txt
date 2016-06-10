@@ -57,16 +57,11 @@ SNOW_BAND           5  ${VIC_SAMPLE_DATA}/classic/Stehekin/Stehekin_snowbands.tx
 # Output Files and Parameters
 #######################################################################
 RESULT_DIR     ${VIC_SAMPLE_RESULTS}/sample_classic/  # Results directory path
-OUTPUT_STEPS_PER_DAY        0       # Output steps per day; if 0, OUTPUT_STEPS_PER_DAY = MODEL_STEPS_PER_DAY
-SKIPYEAR       0      # Number of years of output to omit from the output files
-COMPRESS       FALSE  # TRUE = compress input and output files when done
-OUT_FORMAT     ASCII  # BINARY or ASCII
-ALMA_OUTPUT    FALSE  # TRUE = ALMA-format output files; FALSE = standard VIC units
-MOISTFRACT     FALSE  # TRUE = output soil moisture as volumetric fraction; FALSE = standard VIC units
-PRT_HEADER     FALSE  # TRUE = insert a header at the beginning of each output file; FALSE = no header
-PRT_SNOW_BAND  FALSE  # TRUE = write a "snowband" output file, containing band-specific values of snow variables; NOTE: this is ignored if N_OUTFILES is specified below.
 
 OUTFILE     fluxes
+AGGFREQ     NDAYS   1  # Write output every 1 day
+COMPRESS    FALSE  # TRUE = compress input and output files when done
+OUT_FORMAT  ASCII  # BINARY or ASCII
 OUTVAR      OUT_PREC
 OUTVAR      OUT_RAINF
 OUTVAR      OUT_SNOWF
