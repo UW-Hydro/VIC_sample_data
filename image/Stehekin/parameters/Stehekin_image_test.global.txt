@@ -66,10 +66,8 @@ SNOW_BAND       TRUE
 BASEFLOW        ARNO
 JULY_TAVG_SUPPLIED  FALSE
 ORGANIC_FRACT       FALSE
-VEGPARAM_LAI        TRUE
 LAI_SRC             FROM_VEGPARAM
 NODES           3  # number of soil thermal nodes
-ROOT_ZONES      3
 
 #######################################################################
 # Output Files and Parameters
