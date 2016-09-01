@@ -39,8 +39,8 @@ DOMAIN_TYPE    XDIM    lon
 #STATENAME ${STATE_DIR}/image/Stehekin/states  # Output state file path/prefix. The time (STATEYEAR,STATEMONTH,STATEDAY,STATESEC) will be appended to the prefix automatically in the format yyyymmdd.
 #STATEYEAR   1949    # year to save model state
 #STATEMONTH  1  # month to save model state
-#STATEDAY    5  # day to save model state
-#STATESEC    82800  # second to save model state
+#STATEDAY    11  # day to save model state
+#STATESEC    0  # second to save model state
 #STATE_FORMAT           NETCDF4_CLASSIC  # State file format, valid options:
 #NETCDF3_CLASSIC, NETCDF3_64BIT_OFFSET, NETCDF4_CLASSIC, NETCDF4
 
