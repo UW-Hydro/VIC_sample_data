@@ -16,7 +16,7 @@ FROZEN_SOIL	FALSE
 
 AERO_RESIST_CANSNOW AR_406
 
-DOMAIN         ${VIC_SAMPLE_DATA}/image/Stehekin/params/domain.Stehekin.0.0625_deg.nc
+DOMAIN         ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/domain.Stehekin.0.0625_deg.nc
 DOMAIN_TYPE    LAT     lat
 DOMAIN_TYPE    LON     lon
 DOMAIN_TYPE    MASK    mask
@@ -35,7 +35,7 @@ FORCE_TYPE    VP           vp
 FORCE_TYPE    WIND         wind
 WIND_H        10.0
 
-PARAMETERS      ${VIC_SAMPLE_DATA}/image/Stehekin/params/params.Stehekin.MOD_IGBP.nc
+PARAMETERS      ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/params.Stehekin.MOD_IGBP.nc
 LAI_SRC         FROM_VEGPARAM
 FCAN_SRC        FROM_VEGPARAM
 ALB_SRC         FROM_VEGPARAM
