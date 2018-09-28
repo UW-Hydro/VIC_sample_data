@@ -1,11 +1,11 @@
-MODEL_STEPS_PER_DAY   24
-SNOW_STEPS_PER_DAY    24
+MODEL_STEPS_PER_DAY   8
+SNOW_STEPS_PER_DAY    8
 RUNOFF_STEPS_PER_DAY  24
 
-STARTYEAR	1949
+STARTYEAR	2008
 STARTMONTH	01
 STARTDAY	01
-ENDYEAR 	1949
+ENDYEAR 	2008
 ENDMONTH	01
 ENDDAY		10
 CALENDAR    PROLEPTIC_GREGORIAN
@@ -16,7 +16,7 @@ FROZEN_SOIL	FALSE
 
 AERO_RESIST_CANSNOW AR_406
 
-DOMAIN         ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/domain.Stehekin.0.0625_deg.nc
+DOMAIN         ${VIC_SAMPLE_DATA}/WalnutGulch/data/sim/image/parameters/domain.WalnutGulch.0.0625_deg.nc
 DOMAIN_TYPE    LAT     lat
 DOMAIN_TYPE    LON     lon
 DOMAIN_TYPE    MASK    mask
@@ -25,17 +25,17 @@ DOMAIN_TYPE    FRAC    frac
 DOMAIN_TYPE    YDIM    lat
 DOMAIN_TYPE    XDIM    lon
 
-FORCING1      ${VIC_SAMPLE_DATA}/image/Stehekin/forcings/Stehekin_image_test.forcings_10days.0.0625_deg.
-FORCE_TYPE    AIR_TEMP 	   tas
-FORCE_TYPE    PREC         prcp
-FORCE_TYPE    PRESSURE 	   pres
-FORCE_TYPE    SWDOWN       dswrf
-FORCE_TYPE    LWDOWN 	   dlwrf
-FORCE_TYPE    VP           vp
+FORCING1      ${VIC_SAMPLE_DATA}/WalnutGulch/data/sim/image/forcings/livneh_NAmerExt_15Oct2014.WalnutGulch.
+FORCE_TYPE    AIR_TEMP 	   temp
+FORCE_TYPE    PREC         prec
+FORCE_TYPE    PRESSURE 	   air_pressure
+FORCE_TYPE    SWDOWN       shortwave
+FORCE_TYPE    LWDOWN 	   longwave
+FORCE_TYPE    VP           vapor_pressure
 FORCE_TYPE    WIND         wind
 WIND_H        10.0
 
-PARAMETERS      ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/params.Stehekin.MOD_IGBP.nc
+PARAMETERS      ${VIC_SAMPLE_DATA}/WalnutGulch/data/sim/image/parameters/params.WalnutGulch.MOD_IGBP.0.0625_deg.nc
 LAI_SRC         FROM_VEGPARAM
 FCAN_SRC        FROM_VEGPARAM
 ALB_SRC         FROM_VEGPARAM
@@ -49,9 +49,9 @@ SNOW_BAND       TRUE
 #STATEDAY       31
 #STATESEC       82800
 
-RESULT_DIR  ${VIC_SAMPLE_DATA}/image/Stehekin/results/results.MOD_IGBP.Fcanopy
+RESULT_DIR  ${VIC_SAMPLE_DATA}/WalnutGulch/data/sim/image/results/results.MOD_IGBP.Fcanopy
 
-OUTFILE     fluxes.Stehekin.MOD_IGBP.Fcanopy
+OUTFILE     fluxes.WalnutGulch.MOD_IGBP.Fcanopy
 COMPRESS    FALSE
 OUT_FORMAT  NETCDF4
 AGGFREQ     NDAYS 1

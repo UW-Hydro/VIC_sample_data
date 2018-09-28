@@ -16,7 +16,7 @@ FROZEN_SOIL	FALSE
 
 AERO_RESIST_CANSNOW AR_406
 
-DOMAIN         ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/domain.Stehekin.0.0625_deg.nc
+DOMAIN         ${VIC_SAMPLE_DATA}/Stehekin/data/sim/image/parameters/domain.Stehekin.0.0625_deg.nc
 DOMAIN_TYPE    LAT     lat
 DOMAIN_TYPE    LON     lon
 DOMAIN_TYPE    MASK    mask
@@ -25,7 +25,7 @@ DOMAIN_TYPE    FRAC    frac
 DOMAIN_TYPE    YDIM    lat
 DOMAIN_TYPE    XDIM    lon
 
-FORCING1      ${VIC_SAMPLE_DATA}/image/Stehekin/forcings/Stehekin_image_test.forcings_10days.0.0625_deg.
+FORCING1      ${VIC_SAMPLE_DATA}/Stehekin/data/sim/image/forcings/Stehekin_image_test.forcings_10days.0.0625_deg.
 FORCE_TYPE    AIR_TEMP 	   tas
 FORCE_TYPE    PREC         prcp
 FORCE_TYPE    PRESSURE 	   pres
@@ -35,7 +35,7 @@ FORCE_TYPE    VP           vp
 FORCE_TYPE    WIND         wind
 WIND_H        10.0
 
-PARAMETERS      ${VIC_SAMPLE_DATA}/image/Stehekin/parameters/params.Stehekin.MOD_IGBP.nc
+PARAMETERS      ${VIC_SAMPLE_DATA}/Stehekin/data/sim/image/parameters/parameters.Stehekin.L2015.nc
 LAI_SRC         FROM_VEGPARAM
 FCAN_SRC        FROM_DEFAULT
 ALB_SRC         FROM_VEGPARAM
@@ -49,9 +49,9 @@ SNOW_BAND       TRUE
 #STATEDAY       31
 #STATESEC       82800
 
-RESULT_DIR  ${VIC_SAMPLE_DATA}/image/Stehekin/results/results.MOD_IGBP
+RESULT_DIR  ${VIC_SAMPLE_DATA}/Stehekin/data/sim/image/results/results.L2015
 
-OUTFILE     fluxes.Stehekin.MOD_IGBP
+OUTFILE     fluxes.Stehekin.L2015
 COMPRESS    FALSE
 OUT_FORMAT  NETCDF4
 AGGFREQ     NDAYS 1

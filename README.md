@@ -1,22 +1,29 @@
 # VIC_sample_data
 Sample datasets for the Variable Infiltration Capacity (VIC) model.
 
-###Image Driver
+###1. Stehekin
 
-**1. Stehekin**
-- Domain: `Stehekin/image/parameters/domain.stehekin.20151028.nc`
-- 10day Forcings: `Stehekin/image/forcings/Stehekin_image_test.forcings_10days.1949.nc`
-- Global Parameters: `Stehekin/image/parameters/Stehekin_image_test.global.txt`
-- Parameters: `Stehekin/image/parameters/Stehekin_test_params_20160327.nc`
-    - `Stehekin/image/parameters/Stehekin_test_params_20160327.FROZEN_SOIL.nc` for the version where parameter `fs_active=1` in order to run option `FROZEN_SOIL=TRUE`
+- Small basin in Cascade Mountains, WA, USA
+- Drivers: Image and Classic
+- Domain: (image) 80 grid cells at 1/16 degree resolution; (classic) 16 grid cells at 1/8 degree resolution
+- Forcings: 10 days of forcings in 1949, from Maurer et al. (2002)
+- Parameters: (image) from Livneh et al. (2015) and Bohn et al. (2018); (classic) from Maurer et al. (2002)
+- Snowbands: True
+- Frozen Soil: True
+- Canopy Fraction: True
+- Lakes: False
+- Observations: None
 
-###Classic Driver
+###2. Walnut Gulch
 
-**1. Stehekin**
-- 10day Forcings: `Stehekin/classic/forcings/forcings_*`
-- Global Parameters: `Stehekin/classic/parameters/Stehekin_classic_test.global.txt`
-- Soil Parameters: `Stehekin/classic/parameters/Stehekin_soil.txt`
-    - `Stehekin/classic/parameters/Stehekin_soil.FROZEN_SOIL.txt` for the version where parameter `fs_active=1` in order to run option `FROZEN_SOIL=TRUE`
-- Vegetation Parameters: `Stehekin/classic/parameters/Stehekin_vegparam.txt`
-- Vegetation Library: `Stehekin/classic/parameters/Stehekin_veglib.txt`
-- Snowband Parameters: `Stehekin/classic/parameters/Stehekin_snowbands.txt`
+- Small basin in southeastern AZ, USA
+- Drivers: Image
+- Domain: 15 grid cells at 1/16 degree resolution
+- Forcings: 10 days of forcings in 2008, from Livneh et al. (2015)
+- Parameters: from Livneh et al. (2015) and Bohn et al. (2018)
+- Snowbands: True
+- Frozen Soil: False
+- Canopy Fraction: True
+- Lakes: False
+- Observations: None
+

@@ -16,7 +16,7 @@ FROZEN_SOIL	FALSE
 
 AERO_RESIST_CANSNOW AR_406
 
-DOMAIN         ${VIC_SAMPLE_DATA}/image/WalnutGulch/parameters/domain.WalnutGulch.0.0625_deg.nc
+DOMAIN         ${VIC_SAMPLE_DATA}/WalnutGulch/data/sim/image/parameters/domain.WalnutGulch.0.0625_deg.nc
 DOMAIN_TYPE    LAT     lat
 DOMAIN_TYPE    LON     lon
 DOMAIN_TYPE    MASK    mask
@@ -25,7 +25,7 @@ DOMAIN_TYPE    FRAC    frac
 DOMAIN_TYPE    YDIM    lat
 DOMAIN_TYPE    XDIM    lon
 
-FORCING1      ${VIC_SAMPLE_DATA}/image/WalnutGulch/forcings/livneh_NAmerExt_15Oct2014.WalnutGulch.
+FORCING1      ${VIC_SAMPLE_DATA}/WalnutGulch/data/sim/image/forcings/livneh_NAmerExt_15Oct2014.WalnutGulch.
 FORCE_TYPE    AIR_TEMP 	   temp
 FORCE_TYPE    PREC         prec
 FORCE_TYPE    PRESSURE 	   air_pressure
@@ -35,7 +35,7 @@ FORCE_TYPE    VP           vapor_pressure
 FORCE_TYPE    WIND         wind
 WIND_H        10.0
 
-PARAMETERS      ${VIC_SAMPLE_DATA}/image/WalnutGulch/parameters/params.WalnutGulch.MOD_IGBP.0.0625_deg.nc
+PARAMETERS      ${VIC_SAMPLE_DATA}/WalnutGulch/data/sim/image/parameters/parameters.WalnutGulch.L2015.0.0625_deg.nc
 LAI_SRC         FROM_VEGPARAM
 FCAN_SRC        FROM_DEFAULT
 ALB_SRC         FROM_VEGPARAM
@@ -49,9 +49,9 @@ SNOW_BAND       TRUE
 #STATEDAY       31
 #STATESEC       82800
 
-RESULT_DIR  ${VIC_SAMPLE_DATA}/image/WalnutGulch/results/results.MOD_IGBP
+RESULT_DIR  ${VIC_SAMPLE_DATA}/WalnutGulch/data/sim/image/results/results.L2015
 
-OUTFILE     fluxes.WalnutGulch.MOD_IGBP
+OUTFILE     fluxes.WalnutGulch.L2015
 COMPRESS    FALSE
 OUT_FORMAT  NETCDF4
 AGGFREQ     NDAYS 1
