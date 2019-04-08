@@ -4,57 +4,40 @@
 
 - `image/WalnutGulch/parameters/` - parameter files
     - Global Parameter Files:
-        - `WalnutGulch_image_test.global.txt`
-            - Domain File: `domain.stehekin.20151028.nc`
-            - Parameter File: `WalnutGulch_test_params_20160327.nc`
-            - Forcings: `WalnutGulch_image_test.forcings_10days.1949.nc`
-        - `global_param.L2015.txt`
-            - Domain File: `domain.stehekin.0.0625_deg.nc`
-            - Parameter File: `params.WalnutGulch.L2015.nc`
-            - Forcings: `WalnutGulch_image_test.forcings_10days.0.0625_deg.1949.nc`
-        - `global_param.MOD_IGBP.txt`
-            - Domain File: `domain.stehekin.0.0625_deg.nc`
-            - Parameter File: `params.WalnutGulch.MOD_IGBP.nc`
-            - Forcings: `WalnutGulch_image_test.forcings_10days.0.0625_deg.1949.nc`
+        - `global_param.WalnutGulch.L2015.txt`
+            - Domain File: `domain.WalnutGulch.0.0625_deg.nc`
+            - Parameter File: `params.WalnutGulch.L2015.0.0625_deg.nc`
+            - Forcings: `livneh_NAmerExt_15Oct2014.WalnutGulch.2008.nc`
+        - `global_param.WalnutGulch.MOD_IGBP.txt`
+            - Domain File: `domain.WalnutGulch.0.0625_deg.nc`
+            - Parameter File: `params.WalnutGulch.MOD_IGBP.0.0625_deg.nc`
+            - Forcings: `livneh_NAmerExt_15Oct2014.WalnutGulch.2008.nc`
             - fcanopy is ignored 
-        - `global_param.MOD_IGBP.Fcanopy.txt`
-            - Domain File: `domain.stehekin.0.0625_deg.nc`
-            - Parameter File: `params.WalnutGulch.MOD_IGBP.nc`
-            - Forcings: `WalnutGulch_image_test.forcings_10days.0.0625_deg.1949.nc`
+        - `global_param.WalnutGulch.MOD_IGBP.Fcanopy.txt`
+            - Domain File: `domain.WalnutGulch.0.0625_deg.nc`
+            - Parameter File: `params.WalnutGulch.MOD_IGBP.0.0625_deg.nc`
+            - Forcings: `livneh_NAmerExt_15Oct2014.WalnutGulch.2008.nc`
             - fcanopy is used 
     - Domain Files:
-        - `domain.stehekin.20151028.nc`
-            - 0.125 degree resolution
-        - `domain.stehekin.0.0625_deg.nc`
+        - `domain.WalnutGulch.0.0625_deg.nc`
             - 0.0625 degree resolution
             - Taken from Bohn et al. (2018)
     - Parameter Files:
-        - `WalnutGulch_test_params_20160327.nc`
-            - 0.125 degree resolution
-            - NLDAS soil, snow, and veg parameters
-        - `WalnutGulch_test_params_20160327.FROZEN_SOIL.nc`
-            - Same as `WalnutGulch_test_params_20160327.nc` but has `fs_active=1` in order to run option `FROZEN_SOIL=TRUE`
-        - `params.WalnutGulch.L2015.nc`
+        - `params.WalnutGulch.L2015.0.0625_deg.nc`
             - 0.0625 degree resolution
             - Parameters taken from Livneh et al. (2015)
             - NLDAS soil, snow, and veg parameters
-        - `params.WalnutGulch.MOD_IGBP.nc`
+        - `params.WalnutGulch.MOD_IGBP.0.0625_deg.nc`
             - 0.0625 degree resolution
             - MOD-LSP MOD_IGBP parameters (Bohn and Vivoni, 2019)
             - Soils and snowbands from NLDAS
             - Land cover, LAI, fcanopy, and albedo from MODIS
-    - RVIC Parameters:
-        - `stehekin_parameters_01.rvic.prm.WalnutGulch.20150727.nc`
 
 - `image/WalnutGulch/forcings/` - meteorological forcing files
-    - `WalnutGulch_image_test.forcings_10days.1949.nc`
-        - 0.125 degree resolution
-        - 1-hour time step
-        - 10 days of records
-    - `WalnutGulch_image_test.forcings_10days.0.0625_deg.1949.nc`
+    - `livneh_NAmerExt_15Oct2014.WalnutGulch.2008.nc`
         - 0.0625 degree resolution
-        - 1-hour time step
-        - 10 days of records
+        - 3-hour time step
+        - 366 days of records
 
 ### Classic Driver
 
