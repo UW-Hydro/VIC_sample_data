@@ -1,7 +1,7 @@
 # FindleyLake Sample Dataset
 
 ## Documentation
-For details on Findley Lake, explanation of how parameters were estimated, illustration of example simulations, and ideas for future improvements, see: [Preparation of VIC Parameters for Findley Lake.pdf]("Preparation\ of\ VIC\ Parameters\ for\ Findley\ Lake.pdf").
+For details on Findley Lake, explanation of how parameters were estimated, illustration of example simulations, and ideas for future improvements, see: [Preparation_of_VIC_Parameters_for_Findley_Lake.pdf](Preparation_of_VIC_Parameters_for_Findley_Lake.pdf).
 
 ## Files
 
