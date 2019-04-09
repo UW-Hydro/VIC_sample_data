@@ -1,5 +1,7 @@
 # Stehekin Sample Dataset
 
+## Files
+
 ### Image Driver
 
 - `image/Stehekin/parameters/` - parameter files
@@ -47,6 +49,7 @@
         - `stehekin_parameters_01.rvic.prm.Stehekin.20150727.nc`
 
 - `image/Stehekin/forcings/` - meteorological forcing files
+    - From Livneh et al. (2015)
     - `Stehekin_image_test.forcings_10days.1949.nc`
         - 0.125 degree resolution
         - 1-hour time step
@@ -86,6 +89,7 @@
             - NLDAS veg parameters
 
 - `classic/Stehekin/forcings/` - meteorological forcing files
+    - From Livneh et al. (2015)
     - `forcings_*`
         - 0.125 degree resolution
         - 1-hour time step

@@ -1,5 +1,7 @@
 # WalnutGulch Sample Dataset
 
+## Files
+
 ### Image Driver
 
 - `image/WalnutGulch/parameters/` - parameter files
@@ -38,6 +40,7 @@
         - 0.0625 degree resolution
         - 3-hour time step
         - 366 days of records
+        - From Livneh et al. (2015)
 
 ### Classic Driver
 
