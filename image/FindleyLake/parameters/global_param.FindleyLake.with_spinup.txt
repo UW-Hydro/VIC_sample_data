@@ -43,7 +43,7 @@ ALB_SRC         FROM_VEGPARAM
 LAKES           TRUE
 LAKE_PROFILE    TRUE
 
-#INIT_STATE  {$VIC_SAMPLE_DATA}/image/FindleyLake/state/state.FindleyLake.19740101_00000.nc
+INIT_STATE  {$VIC_SAMPLE_DATA}/image/FindleyLake/state/state.FindleyLake.19740101_00000.nc
 STATENAME   {$VIC_SAMPLE_DATA}/image/FindleyLake/state/state.FindleyLake
 STATEYEAR   1980
 STATEMONTH  1
