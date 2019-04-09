@@ -14,6 +14,13 @@ For details on Findley Lake, explanation of how parameters were estimated, illus
             - Parameter File: `params.FindleyLake.nc`
             - Forcings: `livneh_NAmerExt_15Oct2014.FindleyLake.*.nc`
             - fcanopy is used 
+            - Default initial state is used
+        - `global_param.FindleyLake.txt`
+            - Domain File: `domain.FindleyLake.nc`
+            - Parameter File: `params.FindleyLake.nc`
+            - Forcings: `livneh_NAmerExt_15Oct2014.FindleyLake.*.nc`
+            - Initial State File: `state.FindleyLake.19740101_00000nc`
+            - fcanopy is used 
     - Domain Files:
         - `domain.FindleyLake.nc`
             - 0.0625 degree resolution
@@ -31,6 +38,11 @@ For details on Findley Lake, explanation of how parameters were estimated, illus
         - 1-hour time step
         - From Livneh et al. (2015)
         - Disaggregated to hourly via MetSim (Bennett et al., 2018) v2.0.0 using "mix" precipitation option and parameters from Bohn et al. (2018)
+
+- `image/FindleyLake/state/` - initial and final state files
+    - `state.FindleyLake.19740101_00000.nc`
+        - Final state file from a 5-year simulation starting from a default initial state
+        - This can be used as the initial (spun-up) state file for a simulation
 
 ### Classic Driver
 
