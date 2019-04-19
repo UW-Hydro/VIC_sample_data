@@ -5,6 +5,10 @@ For details on Findley Lake, explanation of how parameters were estimated, illus
 
 ## Files
 
+### Observations
+
+- `obs/FindleyLake/FindleyLakeHydrology.cvs` - observations of water balance terms from Richey and Wissmar (1979)
+
 ### Image Driver
 
 - `image/FindleyLake/parameters/` - parameter files
@@ -80,3 +84,4 @@ For details on Findley Lake, explanation of how parameters were estimated, illus
  - Bohn, T. J, and E. R. Vivoni, 2019: MOD-LSP: MODIS-Based Parameters for Variable Infiltration Capacity (VIC) Model over the Continental US, Mexico, and Southern Canada (Version 1.0) [Data set]. Zenodo, doi:10.5281/zenodo.2612560. https://zenodo.org/record/2612560.
  - Bohn, T. J., K. M. Whitney, G. Mascaro, and E. R. Vivoni, 2018: Parameters for PITRI Precipitation Temporal Disaggregation over continental US, Mexico, and southern Canada, 1981-2013 (Version 1.1) [Data set]. Zenodo, doi:10.5281/zenodo.2564019. http://zenodo.org/record/2564019.
  - Livneh, B., T. J. Bohn, D. W. Pierce, F. Munoz-Arriola, B. Nijssen, R. Vose, D. R. Cayan, and L. Brekke, 2015: A spatially comprehensive, hydrometeorological data set for Mexico, the U.S., and southern Canada 1950–2013. Nat. Sci. Data, 2, 150042, doi:10.1038/sdata.2015.42.
+ - Richey, J. E., and R. C. Wissmar, 1979: Sources and influences of allochthonous inputs on the productivity of a subalpine lake. Ecology, 60, 318–328.

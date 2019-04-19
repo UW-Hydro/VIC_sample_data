@@ -15,7 +15,13 @@ FULL_ENERGY TRUE
 FROZEN_SOIL	FALSE
 AERO_RESIST_CANSNOW AR_406
 
-FORCING1      {$VIC_SAMPLE_DATA}/classic/FindleyLake/forcings/livneh_NAmerExt_15Oct2014.FindleyLake_
+#INIT_STATE  ${VIC_SAMPLE_DATA}/classic/FindleyLake/state/state.FindleyLake.19800101
+STATENAME   ${VIC_SAMPLE_DATA}/classic/FindleyLake/state/state.FindleyLake
+STATEYEAR   1980
+STATEMONTH  1
+STATEDAY    1
+
+FORCING1      ${VIC_SAMPLE_DATA}/classic/FindleyLake/forcings/livneh_NAmerExt_15Oct2014.FindleyLake_
 FORCE_FORMAT ASCII
 FORCE_TYPE    PREC 	   prec
 FORCE_TYPE    AIR_TEMP 	   temp
@@ -31,9 +37,9 @@ FORCEDAY   1
 GRID_DECIMAL 4
 WIND_H        10.0
 
-SOIL            {$VIC_SAMPLE_DATA}/classic/FindleyLake/params/soil_param.FindleyLake
-VEGLIB          {$VIC_SAMPLE_DATA}/classic/FindleyLake/params/veg_lib_IGBP
-VEGPARAM        {$VIC_SAMPLE_DATA}/classic/FindleyLake/params/veg_param.FindleyLake
+SOIL            ${VIC_SAMPLE_DATA}/classic/FindleyLake/params/soil_param.FindleyLake
+VEGLIB          ${VIC_SAMPLE_DATA}/classic/FindleyLake/params/veg_lib_IGBP
+VEGPARAM        ${VIC_SAMPLE_DATA}/classic/FindleyLake/params/veg_param.FindleyLake
 ROOT_ZONES      3
 VEGLIB_FCAN     FALSE
 VEGPARAM_LAI    TRUE
@@ -42,19 +48,13 @@ VEGPARAM_ALB    TRUE
 LAI_SRC         FROM_VEGPARAM
 FCAN_SRC        FROM_VEGPARAM
 ALB_SRC         FROM_VEGPARAM
-LAKES           {$VIC_SAMPLE_DATA}/classic/FindleyLake/params/lake_param.FindleyLake
+LAKES           ${VIC_SAMPLE_DATA}/classic/FindleyLake/params/lake_param.FindleyLake
 LAKE_PROFILE    TRUE
 EQUAL_AREA      TRUE
 RESOLUTION      1.29
 SNOW_BAND       1
 
-#INIT_STATE  {$VIC_SAMPLE_DATA}/classic/FindleyLake/state/state.FindleyLake.19800101
-STATENAME   {$VIC_SAMPLE_DATA}/classic/FindleyLake/state/state.FindleyLake
-STATEYEAR   1980
-STATEMONTH  1
-STATEDAY    1
-
-RESULT_DIR  {$VIC_SAMPLE_DATA}/classic/FindleyLake/results
+RESULT_DIR  ${VIC_SAMPLE_RESULTS}/sample_classic
 OUTFILE     fluxes
 COMPRESS    FALSE
 OUT_FORMAT  ASCII

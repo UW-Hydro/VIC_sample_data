@@ -15,7 +15,7 @@ FULL_ENERGY TRUE
 FROZEN_SOIL	FALSE
 AERO_RESIST_CANSNOW AR_406
 
-DOMAIN         {$VIC_SAMPLE_DATA}/image/FindleyLake/params/domain.FindleyLake.nc
+DOMAIN         ${VIC_SAMPLE_DATA}/image/FindleyLake/params/domain.FindleyLake.nc
 DOMAIN_TYPE    LAT     lat
 DOMAIN_TYPE    LON     lon
 DOMAIN_TYPE    MASK    mask
@@ -24,7 +24,13 @@ DOMAIN_TYPE    FRAC    frac
 DOMAIN_TYPE    YDIM    lat
 DOMAIN_TYPE    XDIM    lon
 
-FORCING1      {$VIC_SAMPLE_DATA}/image/FindleyLake/forcings/livneh_NAmerExt_15Oct2014.FindleyLake.
+#INIT_STATE  ${VIC_SAMPLE_DATA}/image/FindleyLake/state/state.FindleyLake.19740101_00000.nc
+STATENAME   ${VIC_SAMPLE_DATA}/image/FindleyLake/state/state.FindleyLake
+STATEYEAR   1980
+STATEMONTH  1
+STATEDAY    1
+
+FORCING1      ${VIC_SAMPLE_DATA}/image/FindleyLake/forcings/livneh_NAmerExt_15Oct2014.FindleyLake.
 FORCE_TYPE    AIR_TEMP 	   temp
 FORCE_TYPE    PREC 	   prec
 FORCE_TYPE    PRESSURE 	   air_pressure
@@ -34,7 +40,7 @@ FORCE_TYPE    VP           vapor_pressure
 FORCE_TYPE    WIND         wind
 WIND_H        10.0
 
-PARAMETERS      {$VIC_SAMPLE_DATA}/image/FindleyLake/params/params.FindleyLake.nc
+PARAMETERS      ${VIC_SAMPLE_DATA}/image/FindleyLake/params/params.FindleyLake.nc
 NODES           3
 SNOW_BAND       FALSE
 LAI_SRC         FROM_VEGPARAM
@@ -43,13 +49,7 @@ ALB_SRC         FROM_VEGPARAM
 LAKES           TRUE
 LAKE_PROFILE    TRUE
 
-#INIT_STATE  {$VIC_SAMPLE_DATA}/image/FindleyLake/state/state.FindleyLake.19740101_00000.nc
-STATENAME   {$VIC_SAMPLE_DATA}/image/FindleyLake/state/state.FindleyLake
-STATEYEAR   1980
-STATEMONTH  1
-STATEDAY    1
-
-RESULT_DIR  {$VIC_SAMPLE_DATA}/image/FindleyLake/results
+RESULT_DIR  ${VIC_SAMPLE_RESULTS}/sample_image
 OUTFILE     fluxes
 COMPRESS    FALSE
 OUT_FORMAT  NETCDF4
