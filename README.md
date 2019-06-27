@@ -1,7 +1,7 @@
 # VIC_sample_data
 Sample datasets for the Variable Infiltration Capacity (VIC) model.
 
-###Image Driver
+### Image Driver
 
 **1. Stehekin**
 - Domain: `Stehekin/image/parameters/domain.stehekin.20151028.nc`
@@ -10,7 +10,7 @@ Sample datasets for the Variable Infiltration Capacity (VIC) model.
 - Parameters: `Stehekin/image/parameters/Stehekin_test_params_20160327.nc`
     - `Stehekin/image/parameters/Stehekin_test_params_20160327.FROZEN_SOIL.nc` for the version where parameter `fs_active=1` in order to run option `FROZEN_SOIL=TRUE`
 
-###Classic Driver
+### Classic Driver
 
 **1. Stehekin**
 - 10day Forcings: `Stehekin/classic/forcings/forcings_*`
