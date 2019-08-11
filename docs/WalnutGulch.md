@@ -117,10 +117,11 @@
         - 3-hour time step
         - 366 days of records
         - From Livneh et al. (2015)
+    - NOTE: these are gridded forcings, as opposed to the flux tower forcings in the `obs/WalnutGulch/AMERIFLUX/$SiteCode/vic_force/` directories.
 
 ### Classic Driver
 
-Currently there are no classic driver inputs for this dataset.
+Currently there are no classic driver parameters for this dataset. However, classic driver forcings are available in the `obs/WalnutGulch/AMERIFLUX/$SiteCode/vic_force/` directories. Classic driver parameters could be created by appropriate reformatting of the image-driver paramters.
 
 ## References
  - Bohn, T. J, and E. R. Vivoni, 2019: MOD-LSP: MODIS-Based Parameters for Variable Infiltration Capacity (VIC) Model over the Continental US, Mexico, and Southern Canada (Version 1.0) [Data set]. Zenodo, doi:10.5281/zenodo.2612560. https://zenodo.org/record/2612560.
