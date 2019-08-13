@@ -25,6 +25,15 @@ DOMAIN_TYPE    FRAC    frac
 DOMAIN_TYPE    YDIM    lat
 DOMAIN_TYPE    XDIM    lon
 
+##INIT_STATE ${VIC_STATE_DIR}/image/WalnutGulch/states.WalnutGulch.MOD_IGBP_YYYYMMDD_SSSSS.nc # Initial state path/file, where YYYY = year, MM = month, DD = day, SSSSS = seconds, for example 20080111_00000
+#STATENAME ${VIC_STATE_DIR}/image/WalnutGulch/states.WalnutGulch.MOD_IGBP  # Output state file path/prefix. The time (STATEYEAR,STATEMONTH,STATEDAY,STATESEC) will be appended to the prefix automatically in the format yyyymmdd.
+#STATEYEAR   2008    # year to save model state
+#STATEMONTH  1  # month to save model state
+#STATEDAY    11  # day to save model state
+#STATESEC    0  # second to save model state
+#STATE_FORMAT NETCDF4_CLASSIC  # State file format, valid options:
+#NETCDF3_CLASSIC, NETCDF3_64BIT_OFFSET, NETCDF4_CLASSIC, NETCDF4
+
 FORCING1      ${VIC_SAMPLE_DATA}/image/WalnutGulch/forcings/livneh_NAmerExt_15Oct2014.WalnutGulch.
 FORCE_TYPE    AIR_TEMP 	   temp
 FORCE_TYPE    PREC         prec
@@ -42,15 +51,7 @@ ALB_SRC         FROM_VEGPARAM
 NODES           3
 SNOW_BAND       TRUE
 
-#INIT_STATE     <INIT_STATE>
-#STATENAME      <STATENAME>
-#STATEYEAR      <STATEYEAR>
-#STATEMONTH     12
-#STATEDAY       31
-#STATESEC       82800
-
-RESULT_DIR  ${VIC_SAMPLE_DATA}/image/WalnutGulch/results/results.MOD_IGBP
-
+RESULT_DIR  ${VIC_SAMPLE_RESULTS}/sample_image
 OUTFILE     fluxes.WalnutGulch.MOD_IGBP
 COMPRESS    FALSE
 OUT_FORMAT  NETCDF4

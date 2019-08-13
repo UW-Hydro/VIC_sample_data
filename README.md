@@ -4,8 +4,10 @@ Sample datasets for the Variable Infiltration Capacity (VIC) model.
 The following datasets are currently available:
 - [Stehekin](docs/Stehekin.md)
 - [WalnutGulch](docs/WalnutGulch.md)
+- [FindleyLake](docs/FindleyLake.md)
 
 ## Directory Structure (for dataset `$DATASET`)
+- `obs/$DATASET/` - observations for dataset `$DATASET`
 - `docs/$DATASET.md` - documentation describing dataset `$DATASET`
 - `classic/$DATASET/` - classic-driver data for dataset `$DATASET`
   - `forcings/` - ascii-format meteorological forcing files
