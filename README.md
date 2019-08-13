@@ -7,7 +7,6 @@ The following datasets are currently available:
 - [FindleyLake](docs/FindleyLake.md)
 
 ## Directory Structure (for dataset `$DATASET`)
-- `obs/$DATASET/` - observations for dataset `$DATASET`
 - `docs/$DATASET.md` - documentation describing dataset `$DATASET`
 - `classic/$DATASET/` - classic-driver data for dataset `$DATASET`
   - `forcings/` - ascii-format meteorological forcing files
@@ -15,4 +14,4 @@ The following datasets are currently available:
 - `image/$DATASET/` - image-driver data for dataset `$DATASET`
   - `forcings/` - NetCDF-format meteorological forcing files
   - `parameters/` - NetCDF-format parameter files (domain, parameters) plus ascii-format global parameter file
-- `obs/$DATASET.md` - observations for comparison with VIC outputs for dataset `$DATASET`
+- `obs/$DATASET/` - observations for dataset `$DATASET`
