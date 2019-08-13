@@ -8,26 +8,26 @@
             - Domain File: `domain.stehekin.20151028.nc`
             - Parameter File: `Stehekin_test_params_20160327.nc`
             - Forcings: `Stehekin_image_test.forcings_10days.1949.nc`
-        - `global_param.L2015.txt`
-            - Domain File: `domain.stehekin.0.0625_deg.nc`
+        - `global_param.Stehekin.L2015.txt`
+            - Domain File: `domain.Stehekin.0.0625_deg.nc`
             - Parameter File: `params.Stehekin.L2015.nc`
             - Forcings: `Stehekin_image_test.forcings_10days.0.0625_deg.1949.nc`
-        - `global_param.MOD_IGBP.txt`
-            - Domain File: `domain.stehekin.0.0625_deg.nc`
+        - `global_param.Stehekin.MOD_IGBP.txt`
+            - Domain File: `domain.Stehekin.0.0625_deg.nc`
             - Parameter File: `params.Stehekin.MOD_IGBP.nc`
             - Forcings: `Stehekin_image_test.forcings_10days.0.0625_deg.1949.nc`
             - fcanopy is ignored 
-        - `global_param.MOD_IGBP.Fcanopy.txt`
-            - Domain File: `domain.stehekin.0.0625_deg.nc`
+        - `global_param.Stehekin.MOD_IGBP.Fcanopy.txt`
+            - Domain File: `domain.Stehekin.0.0625_deg.nc`
             - Parameter File: `params.Stehekin.MOD_IGBP.nc`
             - Forcings: `Stehekin_image_test.forcings_10days.0.0625_deg.1949.nc`
             - fcanopy is used 
     - Domain Files:
         - `domain.stehekin.20151028.nc`
             - 0.125 degree resolution
-        - `domain.stehekin.0.0625_deg.nc`
+        - `domain.Stehekin.0.0625_deg.nc`
             - 0.0625 degree resolution
-            - Taken from Bohn et al. (2018)
+            - Clipped from Bohn et al. (2018)
     - Parameter Files:
         - `Stehekin_test_params_20160327.nc`
             - 0.125 degree resolution
@@ -36,7 +36,7 @@
             - Same as `Stehekin_test_params_20160327.nc` but has `fs_active=1` in order to run option `FROZEN_SOIL=TRUE`
         - `params.Stehekin.L2015.nc`
             - 0.0625 degree resolution
-            - Parameters taken from Livneh et al. (2015)
+            - Parameters clipped from Livneh et al. (2015)
             - NLDAS soil, snow, and veg parameters
         - `params.Stehekin.MOD_IGBP.nc`
             - 0.0625 degree resolution
