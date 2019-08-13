@@ -13,6 +13,7 @@ RUNOFF_STEPS_PER_DAY  24     # time step in hours for which to solve the runoff 
 STARTYEAR             1949   # year model simulation starts
 STARTMONTH            01     # month model simulation starts
 STARTDAY              01     # day model simulation starts
+STARTHOUR             00     # hour model simulation starts
 ENDYEAR               1949   # year model simulation ends
 ENDMONTH              01     # month model simulation ends
 ENDDAY                10     # day model simulation ends
