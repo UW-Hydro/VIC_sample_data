@@ -35,8 +35,8 @@ DOMAIN_TYPE    XDIM    lon
 ######################################################################
 ## State Files and Parameters
 ########################################################################
-##INIT_STATE  # Initial state path/file
-#STATENAME ${STATE_DIR}/image/Stehekin/states  # Output state file path/prefix. The time (STATEYEAR,STATEMONTH,STATEDAY,STATESEC) will be appended to the prefix automatically in the format yyyymmdd.
+##INIT_STATE ${VIC_STATE_DIR}/image/Stehekin/states_YYYYMMDD_SSSSS.nc # Initial state path/file, where YYYY = year, MM = month, DD = day, SSSSS = seconds, for example 19490111_00000
+#STATENAME ${VIC_STATE_DIR}/image/Stehekin/states  # Output state file path/prefix. The time (STATEYEAR,STATEMONTH,STATEDAY,STATESEC) will be appended to the prefix automatically in the format yyyymmdd.
 #STATEYEAR   1949    # year to save model state
 #STATEMONTH  1  # month to save model state
 #STATEDAY    11  # day to save model state
@@ -72,7 +72,7 @@ NODES           3  # number of soil thermal nodes
 #######################################################################
 # Output Files and Parameters
 #######################################################################
-RESULT_DIR  ${VIC_SAMPLE_RESULTS}/sample_image/
+RESULT_DIR  ${VIC_SAMPLE_RESULTS}/sample_image
 
 OUTFILE     fluxes
 AGGFREQ     NDAYS   1  # Write output every 1 day

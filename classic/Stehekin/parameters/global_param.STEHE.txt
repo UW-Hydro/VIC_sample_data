@@ -19,6 +19,17 @@ ENDDAY                10     # day model simulation ends
 FULL_ENERGY           FALSE  # TRUE = calculate full energy balance; FALSE = compute water balance only
 FROZEN_SOIL           FALSE  # TRUE = calculate frozen soils
 
+######################################################################
+## State Files
+########################################################################
+##INIT_STATE ${VIC_STATE_DIR}/classic/Stehekin/states_YYYYMMDD_SSSSS # Initial state path/file, where YYYY = year, MM = month, DD = day, SSSSS = seconds, for example 19490111_00000
+#STATENAME ${VIC_STATE_DIR}/classic/Stehekin/states  # Output state file path/prefix. The time (STATEYEAR,STATEMONTH,STATEDAY,STATESEC) will be appended to the prefix automatically in the format yyyymmdd.
+#STATEYEAR   1949    # year to save model state
+#STATEMONTH  1  # month to save model state
+#STATEDAY    11  # day to save model state
+#STATESEC    0  # second to save model state
+#STATE_FORMAT ASCII  # State file format, valid options: ASCII, BINARY
+
 #######################################################################
 # Forcing Files
 #######################################################################
@@ -56,8 +67,7 @@ SNOW_BAND           5  ${VIC_SAMPLE_DATA}/classic/Stehekin/Stehekin_snowbands.tx
 #######################################################################
 # Output Files and Parameters
 #######################################################################
-RESULT_DIR     ${VIC_SAMPLE_RESULTS}/sample_classic/  # Results directory path
-
+RESULT_DIR     ${VIC_SAMPLE_RESULTS}/sample_classic  # Results directory path
 OUTFILE     fluxes
 AGGFREQ     NDAYS   1  # Write output every 1 day
 COMPRESS    FALSE  # TRUE = compress input and output files when done
