@@ -15,3 +15,4 @@ The following datasets are currently available:
 - `image/$DATASET/` - image-driver data for dataset `$DATASET`
   - `forcings/` - NetCDF-format meteorological forcing files
   - `parameters/` - NetCDF-format parameter files (domain, parameters) plus ascii-format global parameter file
+- `obs/$DATASET.md` - observations for comparison with VIC outputs for dataset `$DATASET`

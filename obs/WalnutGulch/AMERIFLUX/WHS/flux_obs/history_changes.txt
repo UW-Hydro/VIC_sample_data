@@ -1,0 +1,35 @@
+June 9, 2010
+------------
+
+The first version of the Level 2 files for the Lucky Hills Shrubland,
+Arizona site (US-Whs) was posted and provides data through 2009.  
+
+
+April 20, 2011
+--------------
+
+Version 2 (V002) of the Level 2 (L2) files for US-Whs was posted and
+provides data through 2010.  Data before 2010 did not change from
+Version 1.  
+
+
+January 4, 2013
+---------------
+
+Version 3 (V003) of the L2 files for US-Whs was posted and provides
+data through 2011.  Changes and revisions to data for previous years
+did occur.  For the period 2007 through 2010, flux terms (FC, H, and
+LE) were corrected to include the frequency response correction after
+comparison to closed-path analyzer systems.  In addition, for the period
+2007 to 2009 PAR values were corrected for a new calibration coefficient.
+
+
+April 10, 2013
+--------------
+
+Version 4 (V004) of the L2 files for US-Whs was posted and provides data
+through 2012.  Data before 2012 did not change from V003.  Details on
+the processing by CDIAC of the original files provided by Russ Scott to
+produce the V004 L2 files are provided at
+
+ftp://cdiac.ornl.gov/pub/ameriflux/data/Level2/Sites_ByName/Lucky_Hills_Shrubland/with_gaps/report_Lucky_Hills_Shrubland.html
