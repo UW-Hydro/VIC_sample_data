@@ -1,5 +1,7 @@
 # Stehekin Sample Dataset
 
+## Files
+
 ### Image Driver
 
 - `image/Stehekin/parameters/` - parameter files
@@ -27,7 +29,7 @@
             - 0.125 degree resolution
         - `domain.Stehekin.0.0625_deg.nc`
             - 0.0625 degree resolution
-            - Clipped from Bohn et al. (2018)
+            - Taken from Bohn et al. (2018)
     - Parameter Files:
         - `Stehekin_test_params_20160327.nc`
             - 0.125 degree resolution
@@ -36,7 +38,7 @@
             - Same as `Stehekin_test_params_20160327.nc` but has `fs_active=1` in order to run option `FROZEN_SOIL=TRUE`
         - `params.Stehekin.L2015.nc`
             - 0.0625 degree resolution
-            - Parameters clipped from Livneh et al. (2015)
+            - Parameters taken from Livneh et al. (2015)
             - NLDAS soil, snow, and veg parameters
         - `params.Stehekin.MOD_IGBP.nc`
             - 0.0625 degree resolution
@@ -47,6 +49,7 @@
         - `stehekin_parameters_01.rvic.prm.Stehekin.20150727.nc`
 
 - `image/Stehekin/forcings/` - meteorological forcing files
+    - (All from Livneh et al. (2015))
     - `Stehekin_image_test.forcings_10days.1949.nc`
         - 0.125 degree resolution
         - 1-hour time step
@@ -86,6 +89,7 @@
             - NLDAS veg parameters
 
 - `classic/Stehekin/forcings/` - meteorological forcing files
+    - (All from Livneh et al. (2015))
     - `forcings_*`
         - 0.125 degree resolution
         - 1-hour time step

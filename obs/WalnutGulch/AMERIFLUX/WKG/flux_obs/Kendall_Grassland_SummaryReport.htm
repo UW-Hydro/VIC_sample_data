@@ -1,0 +1,1594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software, see www.sas.com" sasversion="9.1">
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: "." }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.ContentTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.Output
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #F0F0F0;
+  border-width: 1px;
+  border-color: #000000;
+}
+.HeaderEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.NoteContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Graph
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 1px;
+  border-color: #000000;
+}
+.WarnContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.NoteBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.FatalContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Document
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+a:link {
+color:#0066AA
+}
+a:visited {
+color:#004488
+}
+a:active {
+color:#004488
+}
+.BeforeCaption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+}
+.ContentsDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.Pages
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.TitlesAndFooters
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.IndexProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.ProcTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.IndexAction
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: NONE;
+}
+.Data
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Table
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #F0F0F0;
+  border-width: 1px;
+  border-color: #000000;
+}
+.FooterEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.SysTitleAndFooterContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 0;
+  width: 100%;
+}
+.RowFooterEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ContentFolder
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: NONE;
+}
+.RowFooterEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.Index
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ExtendedPage
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 1pt;
+  text-align: center;
+}
+.Container
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Date
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.Caption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+}
+.WarnBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Frame
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.HeaderStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.IndexTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.NoteContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Note
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Byline
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FatalBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ProcTitleFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ByContentFolder
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: NONE;
+}
+.PagesProcLabel
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.RowHeaderFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.WarnContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Cell
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Header
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PageNo
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  text-align: right;
+  vertical-align: top;
+}
+.ContentProcLabel
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.HeaderFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PagesTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.RowHeaderEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PagesProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.Batch
+{
+  font-family: SAS Monospace, Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+  border-width: 1px;
+  border-color: #000000;
+}
+.ContentItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  list-style-type: NONE;
+}
+.Body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.PagesDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.HeaderEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ErrorContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.HeaderStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.DataEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.TitleAndNoteContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 0;
+  width: 100%;
+}
+.RowFooter
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.IndexItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: NONE;
+}
+.BylineContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 0;
+  width: 100%;
+}
+.FatalContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.BodyDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  width: 100%;
+  text-align: right;
+  vertical-align: top;
+}
+.Contents
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.RowFooterStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.UserText
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.HeadersAndFooters
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowHeaderEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ErrorBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ContentProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.RowHeaderStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PagesItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  list-style-type: NONE;
+}
+.RowHeader
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.AfterCaption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+}
+.RowHeaderStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowHeaderEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.DataStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Footer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FolderAction
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: NONE;
+}
+.HeaderEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.SystemTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ErrorContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.SystemFooter
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.FooterEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+<noscript></noscript>
+</head>
+<body onload="startup()" onunload="shutdown()" class="Body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+
+//-->
+</script>
+
+<noscript></noscript>
+<div class="branch">
+<a name="IDX"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class=" SystemTitle">Kendall Grassland, Arizona, USA </td>
+</tr>
+</table><br>
+<div>
+<div align="left">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Print: Data Set WORK.TRONE">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l Header" scope="col">Characteristic</th>
+<th class="l Header" scope="col">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=" Data">Principal investigator</td>
+<td class=" Data">Russell Scott</td>
+</tr>
+<tr>
+<td class=" Data">Site name</td>
+<td class=" Data">Kendall Grassland, Arizona, USA</td>
+</tr>
+<tr>
+<td class=" Data">Site description</td>
+<td class=" Data">GRA Grasslands</td>
+</tr>
+<tr>
+<td class=" Data">Latitude</td>
+<td class=" Data">         31.7365</td>
+</tr>
+<tr>
+<td class=" Data">Longitude</td>
+<td class=" Data" nowrap>       -109.9419</td>
+</tr>
+<tr>
+<td class=" Data">Elevation</td>
+<td class=" Data">            1531</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX1"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class=" SystemTitle">Kendall Grassland, Arizona, USA </td>
+</tr>
+</table><br>
+<div>
+<div align="left">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Tabulate: Table 1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" c Header" rowspan="3" colspan="2" scope="colgroup">&nbsp;</th>
+<th class=" Header" colspan="9" scope="colgroup">Year</th>
+</tr>
+<tr>
+<th class=" Header" scope="col">        2004</th>
+<th class=" Header" scope="col">        2005</th>
+<th class=" Header" scope="col">        2006</th>
+<th class=" Header" scope="col">        2007</th>
+<th class=" Header" scope="col">        2008</th>
+<th class=" Header" scope="col">        2009</th>
+<th class=" Header" scope="col">        2010</th>
+<th class=" Header" scope="col">        2011</th>
+<th class=" Header" scope="col">        2012</th>
+</tr>
+<tr>
+<th class=" Header" scope="col">Percent available</th>
+<th class=" Header" scope="col">Percent available</th>
+<th class=" Header" scope="col">Percent available</th>
+<th class=" Header" scope="col">Percent available</th>
+<th class=" Header" scope="col">Percent available</th>
+<th class=" Header" scope="col">Percent available</th>
+<th class=" Header" scope="col">Percent available</th>
+<th class=" Header" scope="col">Percent available</th>
+<th class=" Header" scope="col">Percent available</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">Variable</th>
+<th class="l RowHeader" scope="row">Description &amp; Units</th>
+<td class="r b Data" rowspan="2">        0.00</td>
+<td class="r b Data" rowspan="2">        0.00</td>
+<td class="r b Data" rowspan="2">        0.00</td>
+<td class="r b Data" rowspan="2">        0.00</td>
+<td class="r b Data" rowspan="2">        0.00</td>
+<td class="r b Data" rowspan="2">        0.00</td>
+<td class="r b Data" rowspan="2">        0.00</td>
+<td class="r b Data" rowspan="2">        0.00</td>
+<td class="r b Data" rowspan="2">        0.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">APAR     </th>
+<th class="l RowHeader" scope="row">Absorbed PAR (umol/m2/s)                                       </th>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">APARpct  </th>
+<th class="l RowHeader" scope="row">&nbsp;</th>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">CO2      </th>
+<th class="l RowHeader" scope="row">CO2 concentration (umol/mol)                                   </th>
+<td class="r b Data">       95.35</td>
+<td class="r b Data">       96.03</td>
+<td class="r b Data">       97.16</td>
+<td class="r b Data">       90.19</td>
+<td class="r b Data">       96.10</td>
+<td class="r b Data">       97.19</td>
+<td class="r b Data">       96.66</td>
+<td class="r b Data">       96.16</td>
+<td class="r b Data">       95.62</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">CO2height</th>
+<th class="l RowHeader" scope="row">CO2 height (m)                                                 </th>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">CO2top   </th>
+<th class="l RowHeader" scope="row">CO2 at top of canopy (umol/mol)                                </th>
+<td class="r b Data">       95.35</td>
+<td class="r b Data">       96.03</td>
+<td class="r b Data">       97.16</td>
+<td class="r b Data">       90.19</td>
+<td class="r b Data">       96.10</td>
+<td class="r b Data">       97.19</td>
+<td class="r b Data">       96.66</td>
+<td class="r b Data">       96.16</td>
+<td class="r b Data">       95.62</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">FC       </th>
+<th class="l RowHeader" scope="row">CO2 Flux by eddy system (not corrected for storage) (umol/m2/s)</th>
+<td class="r b Data">       86.94</td>
+<td class="r b Data">       90.46</td>
+<td class="r b Data">       88.62</td>
+<td class="r b Data">       86.43</td>
+<td class="r b Data">       88.20</td>
+<td class="r b Data">       90.80</td>
+<td class="r b Data">       89.20</td>
+<td class="r b Data">       89.29</td>
+<td class="r b Data">       88.76</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">FG       </th>
+<th class="l RowHeader" scope="row">Soil heat flux (W/m2)                                          </th>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       99.95</td>
+<td class="r b Data">       99.87</td>
+<td class="r b Data">       99.83</td>
+<td class="r b Data">       99.62</td>
+<td class="r b Data">       99.79</td>
+<td class="r b Data">       99.88</td>
+<td class="r b Data">       99.94</td>
+<td class="r b Data">       99.90</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">GAP      </th>
+<th class="l RowHeader" scope="row">GAP                                                            </th>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">GPP      </th>
+<th class="l RowHeader" scope="row">Gross primary production (umol/m2/s)                           </th>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">H        </th>
+<th class="l RowHeader" scope="row">Sensible heat flux (not storage corrected) (W/m2)              </th>
+<td class="r b Data">       94.97</td>
+<td class="r b Data">       95.28</td>
+<td class="r b Data">       93.76</td>
+<td class="r b Data">       94.59</td>
+<td class="r b Data">       95.30</td>
+<td class="r b Data">       94.59</td>
+<td class="r b Data">       93.65</td>
+<td class="r b Data">       92.96</td>
+<td class="r b Data">       92.10</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">H2O      </th>
+<th class="l RowHeader" scope="row">H2O concentration (mmol mol-1)                                 </th>
+<td class="r b Data">       95.35</td>
+<td class="r b Data">       96.03</td>
+<td class="r b Data">       97.16</td>
+<td class="r b Data">       95.14</td>
+<td class="r b Data">       96.10</td>
+<td class="r b Data">       97.19</td>
+<td class="r b Data">       96.66</td>
+<td class="r b Data">       96.16</td>
+<td class="r b Data">       95.62</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">LE       </th>
+<th class="l RowHeader" scope="row">Latent heat flux (not storage corrected) (W/m2)                </th>
+<td class="r b Data">       90.75</td>
+<td class="r b Data">       90.61</td>
+<td class="r b Data">       88.82</td>
+<td class="r b Data">       87.70</td>
+<td class="r b Data">       89.00</td>
+<td class="r b Data">       90.49</td>
+<td class="r b Data">       89.49</td>
+<td class="r b Data">       89.18</td>
+<td class="r b Data">       89.09</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">NEE      </th>
+<th class="l RowHeader" scope="row">NEE of CO2 (with storage) (umol/m2/s)                          </th>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">       39.77</td>
+<td class="r b Data">       41.81</td>
+<td class="r b Data">       86.07</td>
+<td class="r b Data">       85.48</td>
+<td class="r b Data">       81.60</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">PAR      </th>
+<th class="l RowHeader" scope="row">Incoming photosynthetic active radiation (visible) (umol/m2/s) </th>
+<td class="r b Data">       99.96</td>
+<td class="r b Data">       99.73</td>
+<td class="r b Data">       99.53</td>
+<td class="r b Data">       98.90</td>
+<td class="r b Data">       99.38</td>
+<td class="r b Data">       99.83</td>
+<td class="r b Data">       99.72</td>
+<td class="r b Data">       99.73</td>
+<td class="r b Data">       99.52</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">PARdif   </th>
+<th class="l RowHeader" scope="row">&nbsp;</th>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">PARout   </th>
+<th class="l RowHeader" scope="row">Reflected photosynthetically active radiation (umol/m2/s)      </th>
+<td class="r b Data">       99.77</td>
+<td class="r b Data">       99.81</td>
+<td class="r b Data">       99.76</td>
+<td class="r b Data">       99.50</td>
+<td class="r b Data">       99.20</td>
+<td class="r b Data">       99.88</td>
+<td class="r b Data">       99.88</td>
+<td class="r b Data">       99.91</td>
+<td class="r b Data">       99.86</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">PREC     </th>
+<th class="l RowHeader" scope="row">Precipitation (mm/30min)                                       </th>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">PRESS    </th>
+<th class="l RowHeader" scope="row">Air Pressure (kPa)                                             </th>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       99.94</td>
+<td class="r b Data">       99.93</td>
+<td class="r b Data">       99.80</td>
+<td class="r b Data">       99.74</td>
+<td class="r b Data">       99.20</td>
+<td class="r b Data">       99.51</td>
+<td class="r b Data">       98.56</td>
+<td class="r b Data">       97.23</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">RE       </th>
+<th class="l RowHeader" scope="row">Ecosystem respiration (umol/m2/s)                              </th>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">RH       </th>
+<th class="l RowHeader" scope="row">Relative humidity (percent)                                    </th>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       98.81</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.22</td>
+<td class="r b Data">       99.59</td>
+<td class="r b Data">       96.55</td>
+<td class="r b Data">       98.78</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Rg       </th>
+<th class="l RowHeader" scope="row">Incoming global solar radiation (W/m2)                         </th>
+<td class="r b Data">       99.36</td>
+<td class="r b Data">       99.71</td>
+<td class="r b Data">       99.42</td>
+<td class="r b Data">       99.34</td>
+<td class="r b Data">       99.93</td>
+<td class="r b Data">       99.95</td>
+<td class="r b Data">       99.30</td>
+<td class="r b Data">       98.76</td>
+<td class="r b Data">       98.26</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">RgOut    </th>
+<th class="l RowHeader" scope="row">Reflected global solar radiation (W/m2)                        </th>
+<td class="r b Data">       98.68</td>
+<td class="r b Data">       78.11</td>
+<td class="r b Data">       99.21</td>
+<td class="r b Data">       95.55</td>
+<td class="r b Data">       80.24</td>
+<td class="r b Data">       98.71</td>
+<td class="r b Data">       98.72</td>
+<td class="r b Data">       98.23</td>
+<td class="r b Data">       97.58</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Rgdif    </th>
+<th class="l RowHeader" scope="row">Incoming diffuse global solar radiation (W/m2)                 </th>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Rgl      </th>
+<th class="l RowHeader" scope="row">Incoming longwave radiation (W/m2)                             </th>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">       78.55</td>
+<td class="r b Data">       99.98</td>
+<td class="r b Data">       96.46</td>
+<td class="r b Data">       81.09</td>
+<td class="r b Data">       99.22</td>
+<td class="r b Data">       99.59</td>
+<td class="r b Data">       99.33</td>
+<td class="r b Data">       98.78</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">RglOut   </th>
+<th class="l RowHeader" scope="row">Outgoing longwave radiation (W/m2)                             </th>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">       78.55</td>
+<td class="r b Data">       99.98</td>
+<td class="r b Data">       96.46</td>
+<td class="r b Data">       81.09</td>
+<td class="r b Data">       99.22</td>
+<td class="r b Data">       99.59</td>
+<td class="r b Data">       99.33</td>
+<td class="r b Data">       98.78</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Rn       </th>
+<th class="l RowHeader" scope="row">Net radiation positive downwards (W/m2)                        </th>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">       99.98</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">       98.92</td>
+<td class="r b Data">       98.50</td>
+<td class="r b Data">       99.59</td>
+<td class="r b Data">       99.33</td>
+<td class="r b Data">       98.78</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">SFC      </th>
+<th class="l RowHeader" scope="row">CO2 storage in canopy air layer (umol/m2/s)                    </th>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">       42.44</td>
+<td class="r b Data">       48.17</td>
+<td class="r b Data">       98.90</td>
+<td class="r b Data">       96.38</td>
+<td class="r b Data">       88.18</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">SH       </th>
+<th class="l RowHeader" scope="row">Sensible heat storage in canopy air (W/m2)                     </th>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">SLE      </th>
+<th class="l RowHeader" scope="row">Latent heat storage in canopy air (W/m2)                       </th>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">SWC1     </th>
+<th class="l RowHeader" scope="row">Soil moisture content at depth 1 (%)                           </th>
+<td class="r b Data">       99.59</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.72</td>
+<td class="r b Data">       99.73</td>
+<td class="r b Data">       95.70</td>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       99.94</td>
+<td class="r b Data">       99.62</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">SWC2     </th>
+<th class="l RowHeader" scope="row">Soil moisture content at depth 2 (%)                           </th>
+<td class="r b Data">       99.59</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.72</td>
+<td class="r b Data">       99.73</td>
+<td class="r b Data">       99.70</td>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       55.90</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        7.21</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">TA       </th>
+<th class="l RowHeader" scope="row">Air Temperature (degrees C)                                    </th>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       98.81</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.22</td>
+<td class="r b Data">       99.59</td>
+<td class="r b Data">       98.70</td>
+<td class="r b Data">       98.78</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">TS1      </th>
+<th class="l RowHeader" scope="row">Soil temperature at depth 1 (degrees C)                        </th>
+<td class="r b Data">       99.59</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.72</td>
+<td class="r b Data">       99.02</td>
+<td class="r b Data">       95.70</td>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       99.93</td>
+<td class="r b Data">       99.62</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">TS2      </th>
+<th class="l RowHeader" scope="row">Soil temperature at depth 2 (degrees C)                        </th>
+<td class="r b Data">       99.59</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.72</td>
+<td class="r b Data">       99.73</td>
+<td class="r b Data">       99.70</td>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       42.99</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        7.21</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">TSdepth1 </th>
+<th class="l RowHeader" scope="row">Soil depth 1 (cm)                                              </th>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">TSdepth2 </th>
+<th class="l RowHeader" scope="row">Soil depth 2 (cm)                                              </th>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">      100.00</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">UST      </th>
+<th class="l RowHeader" scope="row">Friction velocity (m/s)                                        </th>
+<td class="r b Data">       99.87</td>
+<td class="r b Data">       99.86</td>
+<td class="r b Data">       98.04</td>
+<td class="r b Data">       99.61</td>
+<td class="r b Data">       99.62</td>
+<td class="r b Data">       99.04</td>
+<td class="r b Data">       99.08</td>
+<td class="r b Data">       99.31</td>
+<td class="r b Data">       98.66</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">VPD      </th>
+<th class="l RowHeader" scope="row">Vapor Pressure Deficit (kPa)                                   </th>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       98.81</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.22</td>
+<td class="r b Data">       99.59</td>
+<td class="r b Data">       96.55</td>
+<td class="r b Data">       98.78</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">WD       </th>
+<th class="l RowHeader" scope="row">Wind direction (degrees)                                       </th>
+<td class="r b Data">       99.99</td>
+<td class="r b Data">       99.94</td>
+<td class="r b Data">      100.00</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.97</td>
+<td class="r b Data">       99.22</td>
+<td class="r b Data">       99.59</td>
+<td class="r b Data">       99.37</td>
+<td class="r b Data">       98.78</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">WS       </th>
+<th class="l RowHeader" scope="row">Wind speed (m/s)                                               </th>
+<td class="r b Data">       99.87</td>
+<td class="r b Data">       99.89</td>
+<td class="r b Data">       98.04</td>
+<td class="r b Data">       99.63</td>
+<td class="r b Data">       99.62</td>
+<td class="r b Data">       99.04</td>
+<td class="r b Data">       99.08</td>
+<td class="r b Data">       99.30</td>
+<td class="r b Data">       98.78</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">ZL       </th>
+<th class="l RowHeader" scope="row">Atmosphere stability parameter (unitless)                      </th>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+<td class="r b Data">        0.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
