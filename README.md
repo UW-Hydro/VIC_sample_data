@@ -1,15 +1,20 @@
 # VIC_sample_data
 Sample datasets for the Variable Infiltration Capacity (VIC) model.
 
-The following datasets are currently available:
-- [Stehekin](docs/Stehekin.md)
-- [WalnutGulch](docs/WalnutGulch.md)
+### Image Driver
 
-## Directory Structure (for dataset `$DATASET`)
-- `docs/$DATASET.md` - documentation describing dataset `$DATASET`
-- `classic/$DATASET/` - classic-driver data for dataset `$DATASET`
-  - `forcings/` - ascii-format meteorological forcing files
-  - `parameters/` - ascii-format parameter files (global, soil, snowband, veg)
-- `image/$DATASET/` - image-driver data for dataset `$DATASET`
-  - `forcings/` - NetCDF-format meteorological forcing files
-  - `parameters/` - NetCDF-format parameter files (domain, parameters) plus ascii-format global parameter file
+**1. Stehekin**
+- Domain: `image/Stehekin/domain.stehekin.20151028.nc`
+- 10day Forcings: `image/Stehekin/Stehekin_image_test.forcings_10days.1949.nc`
+- Global Parameters: `image/Stehekin/Stehekin_image_test.global.txt`
+- Parameters: `image/Stehekin/Stehekin_test_params_20151028.nc`
+
+### Classic Driver
+
+**1. Stehekin**
+- 10day Forcings: `classic/Stehekin/forcings/forcings_*`
+- Global Parameters: `classic/Stehekin/Stehekin_classic_test.global.txt`
+- Soil Parameters: `classic/Stehekin/parameters/Stehekin_soil.txt`
+- Vegetation Parameters: `classic/Stehekin/parameters/Stehekin_vegparam.txt`
+- Vegetation Library: `classic/Stehekin/parameters/Stehekin_veglib.txt`
+- Snowband Parameters: `classic/Stehekin/parameters/Stehekin_snowbands.txt`
